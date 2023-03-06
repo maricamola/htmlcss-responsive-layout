@@ -1,0 +1,103 @@
+/*GENERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1380px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*DEBUG*/
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*HEADER*/
+
+header{
+  display: flex;
+  height: 80px;
+  background-color: #0084FD;
+}
+
+header .container{
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.desktop ul{
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*JUMBOTRON*/
+
+.jumbotron .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.jumbotron .card{
+  background-color: #B5DDFF;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jumbotron .card:nth-child(1){
+  width: 60%;
+  height: 200px;
+}
+
+.jumbotron .card:nth-child(2),
+.jumbotron .card:nth-child(3),
+.jumbotron .card:nth-child(4),
+.jumbotron .card:nth-child(5){
+  width:30%;
+  height: 200px;
+}
+
+
+/*MEDIA QUERY*/
+
+/*MOBILE*/
+@media screen and (max-width:479px) {
+  .desktop{
+    display: none;
+  }
+
+  .jumbotron .row{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width:768px) {
+  .desktop{
+    display: none;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width:768px){
+  .mobile{
+    display: none;
+  }
+}

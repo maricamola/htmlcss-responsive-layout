@@ -184,6 +184,13 @@ li a {
     align-items: center;
     width: 100%;
   }
+  .jumbotron .card:nth-child(1),
+  .jumbotron .card:nth-child(2),
+  .jumbotron .card:nth-child(3),
+  .jumbotron .card:nth-child(4),
+  .jumbotron .card:nth-child(5){
+    width: 100%;
+  }
 }
 
 /*GET STARTED*/

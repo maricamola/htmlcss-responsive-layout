@@ -65,7 +65,7 @@ li a {
 }
 
 .jumbotron .card:nth-child(1){
-  width: 60%;
+  width:calc(100%/1.5);
   height: 200px;
 }
 
@@ -73,7 +73,7 @@ li a {
 .jumbotron .card:nth-child(3),
 .jumbotron .card:nth-child(4),
 .jumbotron .card:nth-child(5){
-  width:30%;
+  width:calc(100%/3);
   height: 200px;
 }
 
@@ -151,7 +151,7 @@ li a {
 
 
 
-/*MEDIA QUERY*/
+/*RESPONSIVE AREA*/
 
 /*MOBILE*/
 @media screen and (max-width:479px) {
